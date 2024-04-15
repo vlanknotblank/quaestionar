@@ -8,7 +8,7 @@ import TagIcon from './icons/TagIcon.astro'
 import ToggleTheme from './ToggleTheme.astro'
 
 // ADD YOUR SOCIAL NETWORKS HERE
-const SOCIALNETWORKS = [
+/* const SOCIALNETWORKS = [
 	{
 		name: 'Github',
 		url: 'https://github.com/danielcgilibert/blog-template',
@@ -20,11 +20,11 @@ const SOCIALNETWORKS = [
 		url: 'https://github.com/danielcgilibert/blog-template',
 		icon: TwitterIcon
 	}
-]
+] */
 ---
 
 <header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-auto' href='/'>Home</a>
+	<a class='text-lg mr-auto' href='/'>Inicio</a>
 
 	<div
 		id='astro-header-drawer'
@@ -37,11 +37,11 @@ const SOCIALNETWORKS = [
 				class='flex flex-col gap-4 md:flex-row md:border-r-2 border-black pr-4 dark:border-white'
 			>
 				<HeaderLink href='/tags' class='flex items-center gap-1 text-2xl md:text-base'>
-					<TagIcon /> Tags
+					<TagIcon /> Etiquetas
 				</HeaderLink>
 			</div>
 
-			<div class='flex justify-center items-center md:justify-end gap-3 md:p-0'>
+			<!-- <div class='flex justify-center items-center md:justify-end gap-3 md:p-0'>
 				{
 					SOCIALNETWORKS.map((network) => (
 						<HeaderLink class='' href={network.url} target='_blank' aria-label={network.name}>
@@ -49,7 +49,7 @@ const SOCIALNETWORKS = [
 						</HeaderLink>
 					))
 				}
-			</div>
+			</div> -->
 		</nav>
 	</div>
 
@@ -60,7 +60,7 @@ const SOCIALNETWORKS = [
 		<ToggleTheme />
 		<button id='astro-header-drawer-button' type='button' class='md:ml-6 md:hidden'>
 			<MenuIcon />
-			<span class='sr-only'>Show Menu</span>
+			<span class='sr-only'>Mostrar menu</span>
 		</button>
 	</div>
 </header>
